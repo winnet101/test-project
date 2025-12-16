@@ -7,13 +7,18 @@ package frc.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 
 /**
- * The methods in this class are called automatically corresponding to each
- * mode, as described in
- * the TimedRobot documentation. If you change the name of this class or the
- * package after creating
+ * The methods in this class are called automatically corresponding to each mode, as described in
  * this project, you must also update the Main.java file in the project.
  */
 public class Robot extends TimedRobot {
+  private static final String kDefaultAuto = "Default";
+  public String name = "TestString";
+  private int SSN = 12901237;
+  private int IP_ADRESS = 278905;
+  private static final String kCustomAuto = "My Auto";
+  private String m_autoSelected;
+  private final SendableChooser<String> m_chooser = new SendableChooser<>();
+
   /**
    * This function is run when the robot is first started up and should be used
    * for any
